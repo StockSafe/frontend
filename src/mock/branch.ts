@@ -8,6 +8,9 @@ const branch1: TBranch = {
   updatedAt: new Date(),
 };
 
+const branches: TBranch[] = [branch1];
+
 export default {
   branch1,
+  branches,
 };

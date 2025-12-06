@@ -14,7 +14,10 @@ const item2: TItem = {
   updatedAt: new Date(),
 };
 
+const items: TItem[] = [item1, item2];
+
 export default {
   item1,
   item2,
+  items,
 };

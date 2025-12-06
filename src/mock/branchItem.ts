@@ -22,7 +22,10 @@ const branchItem2: TBranchItem = {
   updatedAt: new Date(),
 };
 
+const branchItems: TBranchItem[] = [branchItem1, branchItem2];
+
 export default {
   branchItem1,
   branchItem2,
+  branchItems,
 };
