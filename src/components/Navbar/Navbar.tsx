@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-empty-object-type */
 /* eslint-disable no-empty-pattern */
 import { Home } from "@mui/icons-material";
-import { AppBar, Box, Button, Toolbar, Typography, useTheme } from "@mui/material";
-import React from "react";
+import { AppBar, Box, Button, Switch, Toolbar, Typography, useTheme } from "@mui/material";
+import ModeToggleButton from "../ModeToggleButton/ModeToggleButton";
 
 type NavbarProps = {};
 const Navbar = ({}: NavbarProps) => {
@@ -31,15 +31,15 @@ const Navbar = ({}: NavbarProps) => {
         <Box sx={{ flexGrow: 1 }} />
 
         <Button
-          color="inherit"
           startIcon={<Home />}
           sx={{
-            marginRight: 2, // מרווח מהכפתור הבא
-            // אם אתה רוצה להשתמש בכפתור קבוע, השתמש ב-Link של ה-Router
+            marginRight: 2,
+            color: theme.palette.text.primary,
           }}
         >
           דף הבית
         </Button>
+        <ModeToggleButton />
       </Toolbar>
     </AppBar>
   );
