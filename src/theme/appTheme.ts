@@ -15,16 +15,14 @@ export const getAppTheme = (mode: "light" | "dark"): Theme =>
         main: "#E91E63",
       },
       background: {
-        default: mode === "light" ? "#F5F7FA" : "#121212", // רקע כללי
-        paper: mode === "light" ? "#FFFFFF" : "#1D1D1D", // רקע לכרטיסים/רכיבים
+        default: mode === "light" ? "#F5F7FA" : "#121212",
+        paper: mode === "light" ? "#FFFFFF" : "#1D1D1D",
       },
-      // ... הגדרות טקסט וטיפוגרפיה נוספות
     },
     typography: {
       fontFamily: "Roboto, Arial, sans-serif",
     },
     components: {
-      // לדוגמה, התאמה של סגנון הטבלה לכל האפליקציה
       MuiTableCell: {
         styleOverrides: {
           root: {
