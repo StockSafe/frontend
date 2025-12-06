@@ -1,7 +1,14 @@
-import React from "react";
+import { Box } from "@mui/material";
+import Navbar from "./components/Navbar";
+import businessMock from "./mock/business";
 
 const App = () => {
-  return <div>App</div>;
+  return (
+    <Box>
+      <Navbar />
+      <>{businessMock.business.title}</>
+    </Box>
+  );
 };
 
 export default App;
